@@ -9,15 +9,6 @@ const humidity = document.querySelector(".humidity")
 let weatherVal, tempVal, humidityVal, weatherId, filepath
 const API_KEY = "&appid=389c9d91adc8abdcbe83c4158b6d645e"
 const API_UNITS = "&units=metric"
-const avblImages = [
-	"clouds",
-	"drizzle",
-	"ice",
-	"mist",
-	"rain",
-	"clear",
-	"thunderstorm",
-]
 async function showWeather() {
 	let city = input.value || "London"
 	const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}${API_UNITS}${API_KEY}`
